@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript Events and Functions</title>
+</head>
+<style type="text/css">
+  body {
+  background-image: url(https://i.pinimg.com/564x/94/57/28/945728abddf84b10c46abd2978972907.jpg);
+  }
+  div {
+    background-color: #635072;
+    width: 600px;
+    margin: auto;
+    height: 650px;
+    padding: 50px;
+  }
+  h1 {
+    color: #4d5a3a;
+    font-family: Arial Black;
+  }
+  #cutie{
+    width: 250px;
+    margin: 40px;
+  }
+  #Multiply{
+    background-color: #BDB76B;
+    font-family: Arial Black;
+  }
+  #Divide{
+    background-color: #FFB6C1;
+    font-family: Arial Black;
+  }
+  #Add{
+    background-color: #008B8B;
+    font-family: Arial Black;
+  }
+  #Subtract{
+    background-color: #A52A2A ;
+    font-family: Arial Black;
+
+  }
+  h2{
+    color:  #F5DEB3;
+    font-family: Arial Black;
+  }
+  p{
+    color: #F5DEB3;
+    font-family: Arial Black;
+  }
+</style>
+<body>
+  <center>
+    <h1>Online Calculator 📱</h1>
+
+    <div>
+      <form>
+        <input type="text" placeholder="Enter the 1st number" id="id1"><br>
+        <input type="text" placeholder="Enter the 2nd number" id="id2"><br>
+        <input type="submit" value="Multiply" onclick="Compute()" id="Multiply" >
+        <input type="submit" value="Divide" onclick="Divide()" id="Divide">
+        <input type="submit" value="Add" onclick="Addition()" id="Add">
+        <input type="submit" value="Subtract" onclick="Subtract()" id="Subtract">
+      </form>
+
+      <script>
+        function Compute() {
+          num1 = document.getElementById('id1').value;
+          num2 = document.getElementById('id2').value;
+          product = num1 * num2;
+          window.alert(product);
+        }
+function Divide() {
+          num1 = document.getElementById('id1').value;
+          num2 = document.getElementById('id2').value;
+          quotient = num1 / num2;
+          window.alert(quotient);
+        
+        }
+
+        function Addition() {
+          num1 = Number(document.getElementById('id1').value);
+          num2 = Number(document.getElementById('id2').value);
+          sum = num1 + num2;
+          window.alert(sum);
+        }
+
+        function Subtraction() {
+          num1 = document.getElementById('id1').value;
+          num2 = document.getElementById('id2').value;
+          difference = num2 - num1;
+          window.alert(difference);
+        }
+
+      </script>
+      <img src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-cute-character-with-numbers-on-top-of-a-sticker-sheet-vector-png-image_12231087.png" id="cutie">
+      <h2>Questions</h2>
+      <p> 1.)121 Divided by 11?</p>
+      <p>2.) 60 Times 8?</p>
+      <p>3.)250 Divided by 5</p>
+      <p>4.)The Product of 131 × 0 × 300 × 4?</p>
+      <p>4.)The Sum 520 + 370?</p>
+      
+    </div>
+    
+  </center>
+</body>
+</html>
